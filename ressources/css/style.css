@@ -1,0 +1,447 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+  }
+  
+  /*  ---------------------------- CSS Global ---------------------------- */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ---------------------------- Construction du header ---------------------------- */
+  
+  header {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../images/herobanner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  
+  /* ---------------------------- NavBar ---------------------------- */
+  
+  .containerNavBox {
+    height: 15vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerNav {
+    display: flex;
+    background-color: var(--sectionOdd);
+    width: 100vw;
+    height: 10vh;
+    border-radius: 15px;
+  }
+  
+  .containerNavLogo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 1.5%;
+  }
+  
+  .containerNavLogo img {
+    width: 120px;
+  }
+  
+  .containerNavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 1.5%;
+  }
+  
+  .containerNavLinks nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .containerNavLinks nav a {
+    text-decoration: none;
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-left: 5%;
+  }
+  
+  /* ---------------------------- HeroBanner ---------------------------- */
+  
+  .containerHeader {
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .heroBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 85vh;
+  }
+  
+  .heroBanner h1 {
+    text-align: center;
+    font-size: 4em;
+    color: var(--textColor);
+    text-transform: uppercase;
+    padding-bottom: 2%;
+  }
+  
+  .heroBanner p {
+    font-size: 1.5em;
+    color: var(--textColor);
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  
+  .heroBannerButton {
+    background-color: var(--sectionOdd);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    padding: 1.5%;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  
+  .heroBannerButton:hover {
+    background-color: #1d3557;
+  }
+  
+  /* ---------------------------- Presentation ---------------------------- */
+  
+  /* ---------------------------- Flexibilité de la section  ---------------------------- */
+  
+  #presentation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* ---------------------------- Flexibilité du container  ---------------------------- */
+  
+  .containerPresentation {
+    display: flex;
+    width: 85%;
+    padding: 3% 0%;
+  }
+  
+  /* ---------------------------- Container gauche  ---------------------------- */
+  
+  .containerPresentationLeft {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .containerPresentationLeft img {
+    width: 80%;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  /* ---------------------------- Container droit ---------------------------- */
+  
+  .containerPresentationRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 50%;
+  }
+  
+  .containerPresentationTittle {
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .containerPresentationText {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .containerPresentationTittle h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: black;
+  }
+  
+  .containerPresentationText p {
+    font-size: 1.2em;
+    color: black;
+    padding-top: 4%;
+  }
+  
+  /* ---------------------------- Produits ---------------------------- */
+  
+  /* ---------------------------- Flexibilité de la section  ---------------------------- */
+  
+  #products {
+    width: 100%;
+    height: auto;
+    background-color: var(--sectionEven);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .containerProducts {
+    display: flex;
+    width: 85%;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 3%;
+  }
+  
+  /* ---------------------------- Textes  ---------------------------- */
+  
+  .productsText {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  
+  .productsText h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    color: var(--textColor);
+  }
+  
+  .productsText > p {
+    font-size: 1.2em;
+    color: var(--textColor);
+    text-align: center;
+  }
+  
+  /* ---------------------------- Block Cards  ---------------------------- */
+  
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    padding-top: 3%;
+  }
+  
+  /* ---------------------------- CSS Cards  ---------------------------- */
+  
+  .containerCards {
+    width: 300px;
+    height: 500px;
+    background-color: var(--cardsColor);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  
+  .containerCardsImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    padding: 4%;
+  }
+  
+  .cardsImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .containerCardsText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 0% 2%;
+  }
+  
+  .containerCardsText h3 {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 3%;
+  }
+  
+  .containerCardsText p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  /* ---------------------------- Formulaire  ----------------------------  */
+  
+  /* ---------------------------- Flexibilité de la section  ----------------------------  */
+  
+  #form {
+    width: 100%;
+    height: auto;
+    padding-bottom: 4%;
+  }
+  
+  /* ---------------------------- Tittle  ----------------------------  */
+  
+  .formTitle {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3%;
+  }
+  
+  .formTitle h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  /* ---------------------------- Container Form  ----------------------------  */
+  
+  .containerForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* ---------------------------- Container Gauche  ----------------------------  */
+  
+  .containerFormLeft {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .containerFormLeft iframe {
+    border-radius: 15px;
+  }
+  
+  /* ---------------------------- Container Droit  ----------------------------  */
+  
+  .containerFormRight {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* ---------------------------- Formulaire  ----------------------------  */
+  
+  .blockForm {
+    background-color: var(--cardsColor);
+    height: 450px;
+    width: 600px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  
+  .blockForm div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5%;
+  }
+  
+  label {
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  
+  input {
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+  }
+  
+  /* ---------------------------- Button  ----------------------------  */
+  
+  .buttonFieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttonFieldset input {
+    background-color: var(--sectionOdd);
+    cursor: pointer;
+    padding: 2% 0;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--textColor);
+    transition: 0.5s;
+  }
+  
+  .buttonFieldset input:hover {
+    background-color: #1d3557;
+  }
+  
+  /* ---------------------------- Footer  ----------------------------  */
+  
+  footer {
+      background-color: var(--sectionOdd);
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .containerFooter {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+  }
+  
+  .containerFooter a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--textColor);
+  }  

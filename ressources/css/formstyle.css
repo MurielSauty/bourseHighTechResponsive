@@ -1,0 +1,157 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+  }
+  
+  /*  ---------------------------- CSS Global ---------------------------- */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ---------------------------- Construction du header ---------------------------- */
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  
+  /* ---------------------------- NavBar ---------------------------- */
+  
+  .containerNavBox {
+    height: 15vh;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerNav {
+    display: flex;
+    background-color: var(--sectionOdd);
+    width: 100vw;
+    height: 10vh;
+    border-radius: 15px;
+  }
+  
+  .containerNavLogo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 1.5%;
+  }
+  
+  .containerNavLogo img {
+    width: 120px;
+  }
+  
+  .containerNavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 1.5%;
+  }
+  
+  .containerNavLinks nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .containerNavLinks nav a {
+    text-decoration: none;
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-left: 5%;
+  }
+  
+  /* ---------------------------- Container Form  ----------------------------  */
+  
+  #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+  }
+  /* ---------------------------- Container Droit  ----------------------------  */
+  
+  .containerFormRight {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* ---------------------------- Formulaire  ----------------------------  */
+  
+  .blockForm {
+    background-color: var(--cardsColor);
+    height: 450px;
+    width: 700px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+  
+  .blockForm div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5%;
+  }
+  
+  label {
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+  
+  input {
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+  }
+  
+  /* ---------------------------- Button  ----------------------------  */
+  
+  .buttonFieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttonFieldset input {
+    background-color: var(--sectionOdd);
+    cursor: pointer;
+    padding: 2% 0;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--textColor);
+    transition: 0.5s;
+  }
+  
+  .buttonFieldset input:hover {
+    background-color: #1d3557;
+  }
