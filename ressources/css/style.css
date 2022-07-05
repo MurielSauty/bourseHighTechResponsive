@@ -88,7 +88,61 @@
     font-size: 1.3em;
     margin-left: 5%;
   }
-  
+
+/*Nav buger*/
+/* Style the navigation menu */
+
+  /************ MENU ***********/
+  nav li{
+      display: block;
+      padding-bottom: 5px;
+  }
+
+  nav{
+      text-align: left;
+      position: static; /* La valeur par défaut */
+      padding-bottom: 5px;
+  }
+
+  nav ul {
+      margin-top: 0;
+      padding-left: 10px;
+  }
+
+  .logo ul{
+      display: flex;
+      flex-direction: row;
+  }
+
+  header{
+      display:flex;
+      flex-direction: column;
+  }
+
+  .menu ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+  }
+
+  .menu li{
+      font-family: Segoe UI;
+      text-decoration: none;
+      list-style: none;
+      font-size: 20px;
+      color: rgba(255,255,255,1);
+  }
+
+  .menu #myLinks li:hover{
+      background-color: rgba(0, 0, 0, 0.5);
+      color:white;
+  }
+
+  .icon{
+      display: none;
+  }
+}
   /* ---------------------------- HeroBanner ---------------------------- */
   
   .containerHeader {
