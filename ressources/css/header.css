@@ -1,0 +1,64 @@
+h1{
+    font-size: 4rem;
+}
+
+.navbar-brand{
+    width:20%;
+
+    
+}
+
+.navbar-collapse{
+    background-color:rgb(230,57,70) ;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+}
+
+.logo{
+    
+    width: 50%;
+    height: 50%;
+}
+
+nav{
+    background-color:rgb(230,57,70);
+    height: 10%;
+}
+
+.link-secondary{
+    color:white;
+}
+
+header{
+    height: 100vh;
+}
+.heroBanner{
+    background-image: url(../images/herobanner.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    color:white;
+
+}
+.heroBannerButton{
+    display: block;
+    line-height: 50px;
+    background-color:rgb(230,57,70);
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    color:white;
+}
+
+.subTitlePresentation {
+    width: 80%;
+}
+
+.heroBannerButton:hover{
+    background-color:rgb(29,53,87) ;
+    color: white;
+}
