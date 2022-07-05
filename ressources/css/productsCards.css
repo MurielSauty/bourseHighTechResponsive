@@ -1,0 +1,123 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+}
+
+  /*  ---------------------------- CSS Global ---------------------------- */
+
+* {
+        
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        color: white;
+        
+}
+
+
+  /* ---------------------------- CSS Cards  ---------------------------- */
+
+
+
+#products {
+    width: 100%;
+    height: 100%;
+    background-color: var(--sectionEven);
+}
+
+h5{
+    text-transform: uppercase;
+    margin: 5%;
+}
+
+.productsText{
+    padding-top: 5%;
+    
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.productsTextCard{
+    font-size: 20px;
+}
+
+.row{
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: var(--cardsColor);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    
+}
+
+.cardImg{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5%; 
+}
+
+@media screen and  (max-width:992px){
+    .cardText{
+        display: none;
+    }
+
+    .card:hover .cardText{
+        display: block;
+    }
+    
+}
+
+@media screen and  (min-width:992px){
+    .cardImgPlus{
+        display: none;
+    }
+
+    .cardImgPlus:hover .cardImgPlus{
+        display: block;
+    }
+
+    
+}
+
+.imgRelative{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+}
+
+.cardImgPlus{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+
+.plus-circle{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
