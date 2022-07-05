@@ -34,6 +34,7 @@ nav{
 header{
     height: 100vh;
 }
+
 .heroBanner{
     background-image: url(../images/herobanner.jpeg);
     background-position: center;
@@ -41,7 +42,6 @@ header{
     background-repeat: no-repeat;
     height: 90%;
     color:white;
-
 }
 .heroBannerButton{
     display: block;

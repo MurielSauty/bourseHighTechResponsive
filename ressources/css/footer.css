@@ -1,0 +1,41 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+}
+
+footer {
+    background-color: var(--sectionOdd);
+}
+
+.footerLegal {
+    padding-bottom: 1rem;
+    font-size: x-small;
+    width: 90%;
+}
+
+.footerLegal > a {
+    width: 32%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white
+}
+
+.socialLogo {
+    width: 70%;
+    margin: 1.5rem 0;
+}
+
+.socialLogo > a {
+    width: 32%;
+    margin: 0 2rem;
+}

@@ -1,0 +1,62 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.map {
+    height: 450px;
+    width: 100%;
+}
+
+.map > iframe{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.subForm {
+    height: 450px;
+    width: 100%;
+    background-color: var(--cardsColor);
+    border-radius: 15px;
+}
+
+.subForm > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.subForm > div > label {
+    width: 25%;
+}
+
+.subForm > div > input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 0;
+}
+
+.subFormButton {
+    width: 50%;
+}
+
+.subFormButton > button {
+    background-color: #e63946;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    width: 50%;
+}
