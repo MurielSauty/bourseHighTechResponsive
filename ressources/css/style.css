@@ -42,7 +42,7 @@ h1{
 
 nav{
   background-color:rgb(230,57,70);
-  height: 15%;
+  height: 12%;
 }
 
 .link-secondary{
@@ -58,7 +58,7 @@ header{
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
-  height: 85%;
+  height: 88%;
   color:white;
 }
 .heroBannerButton{
@@ -253,7 +253,7 @@ footer {
 }
 
 .footerLegal > a {
-  width: 32%;
+  width: 33%;
 }
 
 a {
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .socialLogo > a {
-  width: 32%;
+  width: 33%;
   margin: 0 2rem;
 }
 
